@@ -1,0 +1,40 @@
+type Query {
+  subreddit: Subreddit!
+  subreddits: [Subreddit!]!
+  comments(url: String!): [Comment!]!
+  replies(permalink: String!): [Reply!]!
+}
+
+type Mutation {
+    updateSubreddit(url: String!, favourite: Boolean!): Subreddit!
+}
+
+type Subreddit {
+  display_name: String
+  title: String
+  subscribers: String
+  public_description: String
+  url: String
+  new: Boolean
+  popular: Boolean
+  favourite: Boolean
+}
+
+type Comment {
+  total_awards_received: String!
+  author: String!
+  body: String!
+  link_title: String!
+  created: String!
+  permalink: String!
+}
+
+type Reply {
+ body: String
+ title: String
+ ups: String!
+ downs: String!
+ created: String!
+ author: String!
+
+}

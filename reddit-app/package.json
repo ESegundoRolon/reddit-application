@@ -1,0 +1,21 @@
+{
+  "name": "reddit-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.2.2",
+    "@apollo/react-hooks": "^4.0.0",
+    "antd": "^4.6.2",
+    "apollo-boost": "^0.4.9",
+    "apollo-server-micro": "^2.17.0",
+    "graphql": "^15.3.0",
+    "next": "9.5.3",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  }
+}

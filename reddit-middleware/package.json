@@ -1,0 +1,19 @@
+{
+  "name": "reddit-middleware",
+  "version": "1.0.0",
+  "description": "graphql API as middleware of reddit API",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Enrique Rolon <rolon-12@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "graphql-yoga": "^1.18.3",
+    "isomorphic-unfetch": "^3.0.0",
+    "mongoose": "^5.10.0"
+  }
+}
