@@ -39,7 +39,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser.
 
 ![alt text](https://user-images.githubusercontent.com/29233071/92375779-e1932680-f101-11ea-8197-18809ac80641.png)
 
-## Setup
+## Issues
 
 The following issues are known:
 
