@@ -35,7 +35,7 @@ To run this project, the reddit-middleware is required
 
 ```
 $ git clone https://github.com/ESegundoRolon/reddit-application.git
-$ cd reddit-middleware
+$ cd reddit-application/reddit-middleware
 $ docker build -t esegundorolon/reddit-middleware .
 $ docker-compose up
 $ cd ../reddit-app
@@ -49,7 +49,7 @@ To run the full application
 
 ```
 $ git clone https://github.com/ESegundoRolon/reddit-application.git
-$ cd reddit-middleware
+$ cd reddit-application/reddit-middleware
 $ docker build -t esegundorolon/reddit-middleware .
 $ cd ../reddit-app
 $ docker build -t esegundorolon/reddit-app .
@@ -64,7 +64,7 @@ The application is tested using Jest and apollo-client libraries for testing pur
 
 ```
 $ git clone https://github.com/ESegundoRolon/reddit-application.git
-$ cd reddit-app
+$ cd reddit-application/reddit-app
 $ yarn
 $ yarn test
 ```

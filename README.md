@@ -28,7 +28,7 @@ To run this project as standalone, Docker V18.03 is required. In order to start 
 
 ```
 $ git clone https://github.com/ESegundoRolon/reddit-application.git
-$ cd reddit-middleware
+$ cd reddit-application/reddit-middleware
 $ docker build -t esegundorolon/reddit-middleware .
 $ cd ../reddit-app
 $ docker build -t esegundorolon/reddit-app .

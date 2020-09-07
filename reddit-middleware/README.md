@@ -32,7 +32,7 @@ To run this project, a mongo database running on localhost:27017 is required. In
 
 ```
 $ git clone https://github.com/ESegundoRolon/reddit-application.git
-$ cd reddit-middleware
+$ cd reddit-application/reddit-middleware
 $ docker-compose up mongodb
 $ yarn
 $ yarn start
@@ -44,7 +44,7 @@ To run the application middleware and database, please execute the following com
 
 ```
 $ git clone https://github.com/ESegundoRolon/reddit-application.git
-$ cd reddit-middleware
+$ cd reddit-application/reddit-middleware
 $ docker build -t esegundorolon/reddit-middleware .
 $ docker-compose up
 ```
