@@ -1,1 +1,1 @@
-export { default as Replies } from "./Replies";
+export { default as Replies, GET_REPLIES } from "./Replies";

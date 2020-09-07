@@ -1,19 +1,26 @@
-import { ApolloProvider } from "@apollo/react-hooks";
-import ApolloClient, { gql } from "apollo-boost";
-import { Subreddits } from "../components/Subreddits";
-
-const Home = ({ data }) => {
+// Apollo
+import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
+import { Home } from "../containers/Home";
+// Instantiate required constructor fields
+const cache = new InMemoryCache();
+const url = process.env.MIDDLEWARE_HOST ? `http://${process.env.MIDDLEWARE_HOST}/` : 'http://localhost:4000/';
+const link = createHttpLink({
+  uri: url,
+});
+const RootContainer = ({ data }) => {
   const client = new ApolloClient({
-    uri: "http://localhost:4000",
+    // Provide required constructor fields
+    cache: cache,
+    link: link,
   });
 
   return (
     <ApolloProvider client={client}>
       <div>
-        <Subreddits />
+        <Home />
       </div>
     </ApolloProvider>
   );
 };
 
-export default Home;
+export default RootContainer;

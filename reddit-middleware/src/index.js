@@ -5,6 +5,7 @@ const { GraphQLServer } = pkg;
 const { startDB, models } = database;
 
 const MONGODB_HOST = process.env.MONGODB_HOST || '127.0.0.1';
+
 const db = startDB({
     db: 'admin',
     user: 'enrique',
